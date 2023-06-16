@@ -1,0 +1,57 @@
+h1{
+    margin-top: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ebdcf3, #d4bfd4);
+    
+}
+#videoPlayer {
+    width: 480px; 
+    height: 360px;
+    margin-bottom: 0.5em;
+}
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+button, input[type="file"] {
+    background-color: #b8a1c2;
+    border: 1px solid #5e5263;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: top;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px gray; 
+}
+button:active, input[type="file"]:active {
+    background-color: #9b59b6;
+}
+#fileSelector {
+    position: absolute;
+    top: 15%;
+}
+
+

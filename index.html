@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica APIs HTML</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>¡Sube un archivo de vídeo!</h1>
+    <input type="file" id="fileSelector" accept="video/*">
+    <br>
+    <video id="videoPlayer" controls>
+        Tu navegador no soporta el forato de video.
+    </video>
+    <div id="buttonContainer">
+        <div class="buttonRow">
+            <button id="playButton">Reproducir</button>
+            <button id="pauseButton">Pausar</button>
+            <button id="volumeUpButton">Subir Volumen</button>
+            <button id="volumeDownButton">Bajar Volumen</button>
+        </div>
+        <div class="buttonRow">
+            <button id="fastForwardButton">Adelantar 10s</button>
+            <button id="rewindButton">Atrasar 10s</button>
+            <button id="speedButton">Velocidad x2</button>
+        </div>
+    </div>
+    <p id="loadingMessage" style="display: none;">Cargando video...</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
